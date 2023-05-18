@@ -1,0 +1,226 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #0b3d01da ;  
+    color: #333333;
+    background-image: url(./Pixel-art-paisagem-dia.png); 
+    background-repeat: no-repeat;
+}
+
+body.modo-escuro {
+    background-color: #150746e7;
+    color: #dac4da;
+    background-image: url(./pixel-art-sky-moonlight-8-bit-cloud-computer-wallpaper-238921-wallhere.com.jpg);
+}
+
+h1 {
+    font-family: 'Press start 2p';
+    font-size: 30px;
+    font-weight: bolder;
+    position: 50% 50%;
+    border-bottom: 1.5px solid #f8fa8b;
+    text-shadow: #131212 4px 3px 3px;
+    color: rgb(240, 240, 62);
+    margin-top: 10px;
+}
+
+.modo-escuro h1 {
+    font-family: 'Press start 2p';
+    font-size: 30px;
+    font-weight: bolder;
+    position: 50% 50%;
+    border-bottom: 1.5px solid #dbdae6;
+    text-shadow: #141313 4px 3px 3px;
+    color: rgb(206, 204, 221);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 20px;
+    border: 3px solid #f8fa8b;
+    border-radius: 50px;
+    background-color: rgba(235, 243, 243, 0.219);
+}
+
+.modo-escuro header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 20px;
+    border: 3px solid #332549;
+    border-radius: 50px;
+    background-color: #ac97fa1f; 
+}
+
+header .logo,
+header .imagem-botao {
+    width: 40px;
+    transition: 0.2 ease-in-out;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+main {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 25px;    
+    border: 3px solid #f8fa8b;
+    border-radius: 50px;
+    background-color: #f8fa8b1f;
+}
+
+.modo-escuro main {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 25px;
+    border: 3px solid #332549;
+    border-radius: 50px;
+    background-color: #ac97fa1f;
+}
+
+
+.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-pokemon {
+    background-color: #f7f3b6;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    border: 2px solid #77a4af;
+    
+}
+
+.cartao-pokemon:hover {
+    background-color: #fcf889;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #110020ea;
+}
+
+.modo-escuro .cartao-pokemon:hover  {
+    background-color: #0a0014ea;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    
+}
+
+.modo-escuro .cartao-pokemon .informacoes {
+    border-color: #dac4da;
+}
+
+.modo-escuro .cartao-pokemon .tipos {
+    color: #141414;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Press start 2p';
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+    font-size: 11px;
+    font-family: 'Press start 2p';
+    font-weight: bolder;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius:10px;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.grama {
+    background-color: #00ff00b4;
+}
+
+.veneno {
+    background-color: #e40474c9;
+} 
+
+.fogo {
+    background-color: #fa8022;
+}
+
+.voador {
+    background-color: #b6e0fc;
+}
+
+.agua {
+    background-color: #4a8bec;
+}
+
+.eletrico {
+    background-color: #ffff1a;
+}
+
+.dragao {
+    background-color: #b063fd;
+}
+
+.normal {
+    background-color: #e2a15f;
+}
+
+.inseto {
+    background-color: #bfe600;
+}
+
+.lutador {
+    background-color: #fc2828de;
+}
+
+.aco {
+    background-color: #808080bb;
+}
+
+.psiquico {
+    background-color: #fc66fc;
+}
+
